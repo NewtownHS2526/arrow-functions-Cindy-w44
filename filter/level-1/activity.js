@@ -189,13 +189,12 @@ Write your solution using:
 */
 
 const exercise4Array = ["red", "blue", "green", "yellow", "purple"];
-const prefix = b;
 // Your solution here (one-line arrow function):
-const exercise4Result1 = exercise4Array.filter(begin => begin === prefix);
+const exercise4Result1 = exercise4Array.filter(exercise4Array => exercise4Array.startsWith("b"));
 
 // Your solution here (regular arrow function):
-const exercise4Result2 = exercise4Array.filter((begin) => {
-  return begin === prefix;
+const exercise4Result2 = exercise4Array.filter(exercise4Array => {
+  return exercise4Array.startsWith("b"); 
 });
 
 // Uncomment to test:
