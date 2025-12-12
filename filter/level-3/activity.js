@@ -32,14 +32,16 @@ const exercise1Array = [
 ];
 
 // Your solution here (one-line arrow function):
-// const exercise1Result1 = 
+const exercise1Result1 = exercise1Array.filter(stocked => stocked.inStock === true);
 
 // Your solution here (regular arrow function):
-// const exercise1Result2 = 
+const exercise1Result2 = exercise1Array.filter((stocked) => {
+  return stocked.inStock === true;
+});
 
 // Uncomment to test:
-// console.log("Exercise 1 - One-line:", exercise1Result1);
-// console.log("Exercise 1 - Regular:", exercise1Result2);
+console.log("Exercise 1 - One-line:", exercise1Result1);
+console.log("Exercise 1 - Regular:", exercise1Result2);
 // Expected: [{ product: "Laptop", price: 1000, inStock: true }, { product: "Keyboard", price: 75, inStock: true }]
 
 /*
@@ -68,14 +70,16 @@ const exercise2Array = [
 ];
 
 // Your solution here (one-line arrow function):
-// const exercise2Result1 = 
+const exercise2Result1 = exercise2Array.filter(place => place.city === "New York");
 
 // Your solution here (regular arrow function):
-// const exercise2Result2 = 
+const exercise2Result2 = exercise2Array.filter((place) => {
+  return place.city === "New York";
+});
 
 // Uncomment to test:
-// console.log("Exercise 2 - One-line:", exercise2Result1);
-// console.log("Exercise 2 - Regular:", exercise2Result2);
+console.log("Exercise 2 - One-line:", exercise2Result1);
+console.log("Exercise 2 - Regular:", exercise2Result2);
 // Expected: [{ name: "Alice", age: 25, city: "New York" }, { name: "Charlie", age: 35, city: "New York" }]
 
 /*
@@ -131,14 +135,16 @@ const exercise4Array = [
 ];
 
 // Your solution here (one-line arrow function):
-// const exercise4Result1 = 
+const exercise4Result1 = exercise4Array.filter(number => number.pages > 200);
 
 // Your solution here (regular arrow function):
-// const exercise4Result2 = 
+const exercise4Result2 = exercise4Array.filter((number) => {
+  return number.pages > 200;
+});
 
 // Uncomment to test:
-// console.log("Exercise 4 - One-line:", exercise4Result1);
-// console.log("Exercise 4 - Regular:", exercise4Result2);
+console.log("Exercise 4 - One-line:", exercise4Result1);
+console.log("Exercise 4 - Regular:", exercise4Result2);
 // Expected: [{ title: "Book B", pages: 300 }, { title: "Book D", pages: 450 }]
 
 /*

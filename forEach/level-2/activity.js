@@ -31,10 +31,12 @@ const exercise1Array = [
 ];
 
 // Your solution here (one-line arrow function):
-// exercise1Array.forEach(
+exercise1Array.forEach(info => console.log(info.name, " is ", info.age, " years old"));
 
 // Your solution here (regular arrow function):
-// exercise1Array.forEach((
+exercise1Array.forEach((info) => {
+  console.log(info.name, " is ", info.age, " years old");
+});
 
 // Expected output:
 // "Alice is 25 years old"
@@ -55,10 +57,14 @@ Write your solution using:
 const exercise2Array = [1, 2, 3, 4, 5];
 
 // Your solution here (one-line arrow function):
-// exercise2Array.forEach(
+exercise2Array.forEach(even => { if (even % 2 === 0) console.log(even) });
 
 // Your solution here (regular arrow function):
-// exercise2Array.forEach((
+exercise2Array.forEach((even) => {
+  if (even % 2 === 0) {
+  console.log(even); 
+}
+});
 
 // Expected output: 2, 4 (each on a new line)
 

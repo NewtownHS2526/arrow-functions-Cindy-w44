@@ -32,14 +32,16 @@ const exercise1Array = [
 ];
 
 // Your solution here (one-line arrow function):
-// const exercise1Result1 =  
+const exercise1Result1 =  exercise1Array.filter(person => person.age >= 18);
 
 // Your solution here (regular arrow function):
-// const exercise1Result2 =  
+const exercise1Result2 =  exercise1Array.filter((person) => {
+  return person.age >= 18;
+});
 
 // Uncomment to test:
-// console.log("Exercise 1 - One-line:", exercise1Result1);
-// console.log("Exercise 1 - Regular:", exercise1Result2);
+console.log("Exercise 1 - One-line:", exercise1Result1);
+console.log("Exercise 1 - Regular:", exercise1Result2);
 // Expected: [{ name: "Alice", age: 25 }, { name: "Charlie", age: 30 }]
 
 /*
