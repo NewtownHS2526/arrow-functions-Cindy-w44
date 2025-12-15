@@ -85,10 +85,12 @@ Write your solution using:
 const exercise3Array = ["apple", "banana", "cherry", "date"];
 
 // Your solution here (one-line arrow function):
-// exercise3Array.forEach((
+exercise3Array.forEach((fruit, index) => console.log("Index", index, fruit));
 
 // Your solution here (regular arrow function):
-// exercise3Array.forEach((
+exercise3Array.forEach((fruit, index) => {
+  console.log("Index", index, fruit);
+});
 
 // Expected output:
 // "Index 0: apple"
@@ -96,7 +98,8 @@ const exercise3Array = ["apple", "banana", "cherry", "date"];
 // "Index 2: cherry"
 // "Index 3: date"
 
-/*
+/*\
+
 EXERCISE 4
 ----------
 Given the array [10, 20, 30, 40], use forEach() to build a string that 
@@ -110,15 +113,18 @@ Write your solution using:
 
 const exercise4Array = [10, 20, 30, 40];
 let exercise4Result = "";
+let arrow = " -> ";
 
 // Your solution here (one-line arrow function):
-// exercise4Array.forEach((
+exercise4Array.forEach((number) => {console.log(exercise4Result += number += arrow)});
 
 // Your solution here (regular arrow function):
-// exercise4Array.forEach((
+exercise4Array.forEach((number) => {
+  console.log(exercise4Result += number += arrow);
+});
 
 // Uncomment to test:
-// console.log("Exercise 4 - Result:", exercise4Result);
+console.log("Exercise 4 - Result:", exercise4Result);
 // Expected: "10 -> 20 -> 30 -> 40"
 
 /*
@@ -136,12 +142,17 @@ const exercise5Array = [5, 15, 25, 35];
 let exercise5Count = 0;
 
 // Your solution here (one-line arrow function):
-// exercise5Array.forEach(
+exercise5Array.forEach(number => number > 20 && exercise5Count ++);
+exercise5Count = 0;
 
 // Your solution here (regular arrow function):
-// exercise5Array.forEach((
+exercise5Array.forEach((number) => {
+  if (number > 20) {
+    exercise5Count ++;
+  }
+});
 
 // Uncomment to test:
-// console.log("Exercise 5 - Count:", exercise5Count);
+console.log("Exercise 5 - Count:", exercise5Count);
 // Expected: 2
 
