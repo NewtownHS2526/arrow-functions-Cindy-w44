@@ -169,7 +169,6 @@ const exercise3Result1 = exercise3Array.reduce((fruit, com) => fruit + "," + com
 const exercise3Result2 = exercise3Array.reduce((fruit,com) => {
   return fruit + "," + com;
 }, "");
-
 // Uncomment to test:
 console.log("Exercise 3 - One-line:", exercise3Result1);
 console.log("Exercise 3 - Regular:", exercise3Result2);
