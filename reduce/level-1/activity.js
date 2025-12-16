@@ -111,14 +111,16 @@ Write your solution using:
 const exercise1Array = [1, 2, 3, 4, 5];
 
 // Your solution here (one-line arrow function):
-// const exercise1Result1 = 
+const exercise1Result1 = exercise1Array.reduce((acc, num) => acc + num, 0);
 
 // Your solution here (regular arrow function):
-// const exercise1Result2 = 
+const exercise1Result2 = exercise1Array.reduce((acc, num) => {
+  return acc + num;
+}, 0);
 
 // Uncomment to test:
-// console.log("Exercise 1 - One-line:", exercise1Result1);
-// console.log("Exercise 1 - Regular:", exercise1Result2);
+console.log("Exercise 1 - One-line:", exercise1Result1);
+console.log("Exercise 1 - Regular:", exercise1Result2);
 // Expected: 15
 
 /*
@@ -135,14 +137,16 @@ Write your solution using:
 const exercise2Array = [10, 20, 30, 40];
 
 // Your solution here (one-line arrow function):
-// const exercise2Result1 = 
+const exercise2Result1 = exercise2Array.reduce((multi, num) => multi * num, 1);
 
 // Your solution here (regular arrow function):
-// const exercise2Result2 = 
+const exercise2Result2 = exercise2Array.reduce((multi, num) => {
+  return multi * num;
+}, 1);
 
 // Uncomment to test:
-// console.log("Exercise 2 - One-line:", exercise2Result1);
-// console.log("Exercise 2 - Regular:", exercise2Result2);
+console.log("Exercise 2 - One-line:", exercise2Result1);
+console.log("Exercise 2 - Regular:", exercise2Result2);
 // Expected: 240000
 
 /*
@@ -159,14 +163,16 @@ Write your solution using:
 const exercise3Array = ["apple", "banana", "orange"];
 
 // Your solution here (one-line arrow function):
-// const exercise3Result1 = 
+const exercise3Result1 = exercise3Array.reduce((fruit, com) => fruit + "," + com, "");
 
 // Your solution here (regular arrow function):
-// const exercise3Result2 = 
+const exercise3Result2 = exercise3Array.reduce((fruit,com) => {
+  return fruit + "," + com;
+}, "");
 
 // Uncomment to test:
-// console.log("Exercise 3 - One-line:", exercise3Result1);
-// console.log("Exercise 3 - Regular:", exercise3Result2);
+console.log("Exercise 3 - One-line:", exercise3Result1);
+console.log("Exercise 3 - Regular:", exercise3Result2);
 // Expected: "apple,banana,orange"
 
 /*

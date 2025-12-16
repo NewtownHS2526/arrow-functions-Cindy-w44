@@ -30,14 +30,16 @@ const exercise1Array = [
 ];
 
 // Your solution here (one-line arrow function):
-// const exercise1Result1 = 
+const exercise1Result1 = exercise1Array.map(info => info.name);
 
 // Your solution here (regular arrow function):
-// const exercise1Result2 = 
+const exercise1Result2 = exercise1Array.map((info) => {
+  return info.name;
+});
 
 // Uncomment to test:
-// console.log("Exercise 1 - One-line:", exercise1Result1);
-// console.log("Exercise 1 - Regular:", exercise1Result2);
+console.log("Exercise 1 - One-line:", exercise1Result1);
+console.log("Exercise 1 - Regular:", exercise1Result2);
 // Expected: ["Alice", "Bob", "Charlie"]
 
 /*
@@ -54,14 +56,16 @@ Write your solution using:
 const exercise2Array = [5, 10, 15, 20];
 
 // Your solution here (one-line arrow function):
-// const exercise2Result1 = 
+const exercise2Result1 = exercise2Array.map(money => money + " dollars");
 
 // Your solution here (regular arrow function):
-// const exercise2Result2 = 
+const exercise2Result2 = exercise2Array.map((money) => {
+  return money + " dollars";
+});
 
 // Uncomment to test:
-// console.log("Exercise 2 - One-line:", exercise2Result1);
-// console.log("Exercise 2 - Regular:", exercise2Result2);
+console.log("Exercise 2 - One-line:", exercise2Result1);
+console.log("Exercise 2 - Regular:", exercise2Result2);
 // Expected: ["5 dollars", "10 dollars", "15 dollars", "20 dollars"]
 
 /*
@@ -78,14 +82,16 @@ Write your solution using:
 const exercise3Array = ["red", "green", "blue"];
 
 // Your solution here (one-line arrow function):
-// const exercise3Result1 = 
+const exercise3Result1 = exercise3Array.map(html => "<div>" + html + "</div>");
 
 // Your solution here (regular arrow function):
-// const exercise3Result2 = 
+const exercise3Result2 = exercise3Array.map((html) => {
+  return "<div>" + html + "</div>";
+});
 
 // Uncomment to test:
-// console.log("Exercise 3 - One-line:", exercise3Result1);
-// console.log("Exercise 3 - Regular:", exercise3Result2);
+console.log("Exercise 3 - One-line:", exercise3Result1);
+console.log("Exercise 3 - Regular:", exercise3Result2);
 // Expected: ["<div>red</div>", "<div>green</div>", "<div>blue</div>"]
 
 /*
@@ -102,14 +108,16 @@ Write your solution using:
 const exercise4Array = [1, 2, 3, 4, 5];
 
 // Your solution here (one-line arrow function):
-// const exercise4Result1 = 
+const exercise4Result1 = exercise4Array.map(number => number * number + 10);
 
 // Your solution here (regular arrow function):
-// const exercise4Result2 = 
+const exercise4Result2 = exercise4Array.map((number) => {
+  return number * number + 10;
+});
 
 // Uncomment to test:
-// console.log("Exercise 4 - One-line:", exercise4Result1);
-// console.log("Exercise 4 - Regular:", exercise4Result2);
+console.log("Exercise 4 - One-line:", exercise4Result1);
+console.log("Exercise 4 - Regular:", exercise4Result2);
 // Expected: [11, 14, 19, 26, 35]
 
 /*
@@ -128,13 +136,15 @@ Write your solution using:
 const exercise5Array = ["apple", "banana", "cherry"];
 
 // Your solution here (one-line arrow function):
-// const exercise5Result1 = 
+const exercise5Result1 = exercise5Array.map(fruits => fruits.split("").reverse().join(""));
 
 // Your solution here (regular arrow function):
-// const exercise5Result2 = 
+const exercise5Result2 = exercise5Array.map((fruits) => {
+  return fruits.split("").reverse().join("");
+});
 
 // Uncomment to test:
-// console.log("Exercise 5 - One-line:", exercise5Result1);
-// console.log("Exercise 5 - Regular:", exercise5Result2);
+console.log("Exercise 5 - One-line:", exercise5Result1);
+console.log("Exercise 5 - Regular:", exercise5Result2);
 // Expected: ["elppa", "ananab", "yrrehc"]
 
