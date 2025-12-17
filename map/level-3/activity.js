@@ -108,17 +108,23 @@ Write your solution using:
 - Regular arrow function
 */
 
-// const exercise4Array = ["hello world", "javascript is fun", "coding rocks"];
+const exercise4Array = ["hello world", "javascript is fun", "coding rocks"];
 
 // // Your solution here (one-line arrow function):
-// const exercise4Result1 = exercise4Array.map
+const exercise4Result1 = exercise4Array.map(s => s.split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" "));
 
 // // Your solution here (regular arrow function):
-// const exercise4Result2 = exercise4Array.map
+const exercise4Result2 = exercise4Array.map(s => {
+  const w = s.split(" ");
+  const capitalize = w.map(w => {
+    return w.charAt(0).toUpperCase() + w.slice(1);
+  });
+  return capitalize.join(" ");
+});
 
 // // Uncomment to test:
-// console.log("Exercise 4 - One-line:", exercise4Result1);
-// console.log("Exercise 4 - Regular:", exercise4Result2);
+console.log("Exercise 4 - One-line:", exercise4Result1);
+console.log("Exercise 4 - Regular:", exercise4Result2);
 // // Expected: ["Hello World", "Javascript Is Fun", "Coding Rocks"]
 
 /*

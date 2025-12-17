@@ -163,12 +163,20 @@ Write your solution using:
 const exercise3Array = ["apple", "banana", "orange"];
 
 // Your solution here (one-line arrow function):
-const exercise3Result1 = exercise3Array.reduce((fruit, com) => fruit + "," + com, "");
+const exercise3Result1 = exercise3Array.reduce((accumulator, currentFruit) => 
+  accumulator ? `${accumulator},${currentFruit}` : currentFruit
+, ""); 
 
 // Your solution here (regular arrow function):
-const exercise3Result2 = exercise3Array.reduce((fruit,com) => {
-  return fruit + "," + com;
+const exercise3Result2 = exercise3Array.reduce((accumulator, currentFruit) => {
+  if (accumulator) {
+    return `${accumulator},${currentFruit}`;
+  } else {
+    
+    return currentFruit;
+  }
 }, "");
+
 // Uncomment to test:
 console.log("Exercise 3 - One-line:", exercise3Result1);
 console.log("Exercise 3 - Regular:", exercise3Result2);
