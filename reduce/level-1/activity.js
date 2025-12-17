@@ -172,7 +172,6 @@ const exercise3Result2 = exercise3Array.reduce((accumulator, currentFruit) => {
   if (accumulator) {
     return `${accumulator},${currentFruit}`;
   } else {
-    
     return currentFruit;
   }
 }, "");
@@ -195,14 +194,20 @@ Write your solution using:
 const exercise4Array = [5, 15, 25, 35];
 
 // Your solution here (one-line arrow function):
-// const exercise4Result1 = 
+const exercise4Result1 = exercise4Array.reduce((acc, curr) => curr > acc ? acc : curr, exercise4Array[0]);
 
 // Your solution here (regular arrow function):
-// const exercise4Result2 = 
+const exercise4Result2 = exercise4Array.reduce((acc, curr) => {
+  if (curr > acc) {
+    return acc === curr;
+  } else {
+    return curr;
+  }
+}, 0);
 
 // Uncomment to test:
-// console.log("Exercise 4 - One-line:", exercise4Result1);
-// console.log("Exercise 4 - Regular:", exercise4Result2);
+console.log("Exercise 4 - One-line:", exercise4Result1);
+console.log("Exercise 4 - Regular:", exercise4Result2);
 // Expected: 35
 
 /*
