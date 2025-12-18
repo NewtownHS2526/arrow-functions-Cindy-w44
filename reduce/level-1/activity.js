@@ -194,14 +194,14 @@ Write your solution using:
 const exercise4Array = [5, 15, 25, 35];
 
 // Your solution here (one-line arrow function):
-const exercise4Result1 = exercise4Array.reduce((acc, curr) => curr > acc ? acc : curr, exercise4Array[0]);
+const exercise4Result1 = exercise4Array.reduce((acc, curr) => curr > acc ? curr : acc, exercise4Array[0]);
 
 // Your solution here (regular arrow function):
 const exercise4Result2 = exercise4Array.reduce((acc, curr) => {
   if (curr > acc) {
-    return acc === curr;
+    return curr ;
   } else {
-    return curr;
+    return acc;
   }
 }, 0);
 
@@ -224,13 +224,15 @@ Write your solution using:
 const exercise5Array = [2, 4, 6, 8];
 
 // Your solution here (one-line arrow function):
-// const exercise5Result1 = 
+const exercise5Result1 = exercise5Array.reduce((acc, curr) => acc + curr, 10);
 
 // Your solution here (regular arrow function):
-// const exercise5Result2 = 
+const exercise5Result2 = exercise5Array.reduce((acc, curr) => {
+  return acc + curr;
+}, 10);
 
 // Uncomment to test:
-// console.log("Exercise 5 - One-line:", exercise5Result1);
-// console.log("Exercise 5 - Regular:", exercise5Result2);
+console.log("Exercise 5 - One-line:", exercise5Result1);
+console.log("Exercise 5 - Regular:", exercise5Result2);
 // Expected: 30 (10 + 2 + 4 + 6 + 8)
 
