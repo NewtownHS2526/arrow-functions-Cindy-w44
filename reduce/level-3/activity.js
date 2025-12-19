@@ -85,12 +85,12 @@ Write your solution using:
 const exercise3Array = [5, 10, 15, 20, 25];
 
 // Your solution here (one-line arrow function):
-const exercise3Result1 = exercise3Array.reduce((acc, curr) => acc + curr / 2, 1);
+const exercise3Result1 = exercise3Array.reduce((acc, curr, _ , arr) => acc + curr / arr.length, 0);
 
 // Your solution here (regular arrow function):
-const exercise3Result2 = exercise3Array.reduce((acc, curr) => {
-  return acc + curr / 2;
-}, 1);
+const exercise3Result2 = exercise3Array.reduce((acc, curr, _ , arr) => {
+  return acc + curr / arr.length;
+}, 0);
 
 // Uncomment to test:
 console.log("Exercise 3 - One-line:", exercise3Result1);
@@ -123,19 +123,19 @@ const exercise4Array = [
 ];
 
 // Your solution here (one-line arrow function):
-const exercise4Result1 = exercise4Array.reduce((acc, curr) => curr > acc ? curr : acc, exercise4Array[0]);
+const exercise4Result1 = exercise4Array.reduce((acc, curr) => curr > acc ? acc : curr);
 
 // Your solution here (regular arrow function):
 const exercise4Result2 = exercise4Array.reduce((acc, curr) => {
   if (curr > acc) {
-    return curr;
+    return acc;
   } 
-  return acc;
-}, exercise4Array[0]);
+  return curr;
+});
 
 // Uncomment to test:
-// console.log("Exercise 4 - One-line:", exercise4Result1);
-// console.log("Exercise 4 - Regular:", exercise4Result2);
+console.log("Exercise 4 - One-line:", exercise4Result1);
+console.log("Exercise 4 - Regular:", exercise4Result2);
 // Expected: { name: "Diana", score: 95 }
 
 /*
