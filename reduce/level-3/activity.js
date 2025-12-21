@@ -155,13 +155,20 @@ Write your solution using:
 const exercise5Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Your solution here (one-line arrow function):
-// const exercise5Result1 = 
+const exercise5Result1 = exercise5Array.reduce((acc, curr) => ({...acc, [curr % 2 === 0 ? 'even' : 'odd'] : [...acc[curr % 2 === 0 ? 'even' : 'odd'], curr] }), { even: [], odd: []});
 
 // Your solution here (regular arrow function):
-// const exercise5Result2 = 
+const exercise5Result2 = exercise5Array.reduce((acc, curr) => {
+  if (curr % 2 === 0) {
+    acc.even.push(curr);
+  } else {
+    acc.odd.push(curr);
+  }
+  return acc;
+}, {even: [], odd: []}); 
 
 // Uncomment to test:
-// console.log("Exercise 5 - One-line:", exercise5Result1);
-// console.log("Exercise 5 - Regular:", exercise5Result2);
+console.log("Exercise 5 - One-line:", exercise5Result1);
+console.log("Exercise 5 - Regular:", exercise5Result2);
 // Expected: { even: [2, 4, 6, 8, 10], odd: [1, 3, 5, 7, 9] }
 
